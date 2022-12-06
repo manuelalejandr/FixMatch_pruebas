@@ -7,7 +7,8 @@ def flags_to_dict(flags):
     return {k : flags[k].value for k in flags}
 
 def get_config():
-    flags = tf.app.flags
+    #flags = tf.app.flags
+    flags = tf.compat.v1.flags
     FLAGS = flags.FLAGS
     
     ###############################################################################

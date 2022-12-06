@@ -18,7 +18,7 @@ class Generator(threading.Thread):
 
         self.placeholders = option['placeholders']
         
-        self.queue = tf.FIFOQueue(
+        self.queue = tf.queue.FIFOQueue(
             capacity = option['queue_size'],
             dtypes = [ph.dtype for ph in self.placeholders],
             shapes = [ph.get_shape().as_list() for ph in self.placeholders],

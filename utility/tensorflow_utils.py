@@ -8,10 +8,11 @@ import tensorflow as tf
 def set_seed(seed):
     random.seed(seed)
     np.random.seed(seed)
-    tf.set_random_seed(seed)
+    #tf.set_random_seed(seed)
+    tf.random.set_seed(seed)
 
 def get_model_vars(scope = None):
-    return tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope)
+    return tf.compat.v1.get_collection(tf.compat.v1.GraphKeys.TRAINABLE_VARIABLES, scope)
 
 def get_getter(ema):
     def ema_getter(getter, name, *args, **kwargs):

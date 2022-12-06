@@ -29,8 +29,8 @@ from PIL import ImageOps, ImageEnhance, ImageFilter, Image
 
 import tensorflow as tf
 
-FLAGS = tf.flags.FLAGS
-
+#FLAGS = tf.flags.FLAGS
+FLAGS = tf.compat.v1.flags
 
 # IMAGE_SIZE = 32
 # What is the dataset mean and std of the images on the training set

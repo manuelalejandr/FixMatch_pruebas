@@ -1,0 +1,17 @@
+
+
+# labeled_dataset : 250
+# unlabeled_dataset : 44750
+# valid_dataset : 5000
+# test_dataset : 10000
+1. weakly=<core.augment.augmentors.Flip_and_Crop object at 0x7fc27443c710>, strongly=<core.augment.augmentors.DataAugmentation object at 0x7fc2745a5e10>
+2. weakly=flip_and_crop, strongly=randaugment
+[i] build model (gpu_id = 0, device_index = 0, reuse = False)
+[i] build model (gpu_id = 1, device_index = 0, reuse = True)
+[i] build model (gpu_id = 2, device_index = 0, reuse = True)
+[i] build model (gpu_id = 3, device_index = 0, reuse = True)
+[i] build model (gpu_id = 4, device_index = 0, reuse = True)
+[i] build model (gpu_id = 5, device_index = 0, reuse = True)
+[i] build model (gpu_id = 6, device_index = 0, reuse = True)
+[i] build model (gpu_id = 7, device_index = 0, reuse = True)
+[i] logits_op = Tensor("Reshape_3:0", shape=(960, 10), dtype=float32)
